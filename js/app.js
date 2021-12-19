@@ -23,5 +23,11 @@ window.onload = () => {
     // Append - 텍스트 노드를 새롭게 생성한 Cell에 붙이기
     const newText0 = document.createTextNode('홍길동');
     newCell0.appendChild(newText0);
+    const newText1 = document.createTextNode('hong@abc.com');
+    newCell1.appendChild(newText1);
+    const newText2 = document.createTextNode('25살');
+    newCell2.appendChild(newText2);
+    const newText3 = document.createTextNode('영화보기');
+    newCell3.appendChild(newText3);
   });
 };
