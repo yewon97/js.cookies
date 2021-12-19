@@ -34,5 +34,12 @@ window.onload = () => {
     const table = document.getElementById('myTable');
     // -1은 thead 빼고, 계산하기 위해서
     console.log(table.rows.length-1);
+    console.log(table.rows[0]); // thead 영역 출력 
+    console.log(table.rows[1]); // tbody -> first row
+
+  // 셀(Cell)이 몇개인지를 알고 싶다면??
+    const r = table.rows.length - 1;
+    // 해당 row의 cell이 몇개인지를 출력함
+    console.log(table.rows[r].cells.length);
   });
 };
