@@ -40,13 +40,14 @@ window.onload = () => {
 
   // 셀(Cell)이 몇개인지를 알고 싶다면??
     const r = table.rows.length - 1;
+    // -1은 table로 부터 가져와서 thead까지 계산함
     // 해당 row의 cell이 몇개인지를 출력함
     const l = table.rows[r].cells.length;
     console.log(table.rows[r].cells.length);
 
   // 반복문 순회하면서 각 Cell에 정보 값을 셋팅
     for(let c = 0; c<l; c++) {
-      hTbody.rows[r-1].cells[c].innerHTML = `Data [${r-1}][${c}]`
+      hTbody.rows[r-1].cells[c].innerHTML = `[${r-1}][${c}]`
     }
   });
 };
