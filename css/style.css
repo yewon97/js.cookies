@@ -1,0 +1,22 @@
+button {
+  width: 120px;
+  background-color: rgb(255, 197, 72);
+  border: none;
+  cursor: pointer; /* help, wait, crosshair, not-allowed, zoom-in, grap */
+  padding: 10px 25px;
+}
+
+button:hover {
+  background-color: red;
+  transition: all 0.3s;
+}
+
+.btnCrc {
+  width: auto;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #ee82ee;
+}
+.btnCrc:hover {
+  background-color: #f07878;
+}
