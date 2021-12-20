@@ -53,3 +53,10 @@ function delCookies() {
   document.cookie = 'userid=leesoonsin; expires=Sat, 01 Jan 1972 00:00:00 GMT' // 쿠키삭제
   alert('쿠키를 삭제하였습니다.');
 }
+
+/* [!] Summary */
+// 1. JS에서 쿠키를 편리하게 쓸려면 사용자가 직접 함수를 만들어서 쓰는게 편리하다.
+// 2. 더 편리한건 JS의 쿠키관련 경량 라이브러리를 쓰는게 더 편리하다.
+// 3. document.cookie가 열일하는구나.
+// 4. 쿠키의 삭제는 한 참 지나간 날짜를 입력해버림으로써 삭제를 시킨다.
+// 5. 일반적으로 Set(생성), Get(읽기), Del(삭제) 3가지의 사용자 함수를 구현해서 사용한다.
