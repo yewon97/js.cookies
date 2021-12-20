@@ -17,4 +17,27 @@ else
 /* 쿠키 생성 */
 function setCookies() {
   // 기본적인 날짜 출력 -> 날짜 쓸일? -> 만료일 -> expiration, expire
+  // let nowDate = new Date();
+  // console.log(nowDate);
+
+  // 만료일 생성
+  // let expiration = nowDate.getDate() + 10; // 30
+  // console.log(typeof expiration);
+
+  // 20일 -> 30일로 날짜가 나타나도록 생성
+  let expiration = new Date();
+  expiration.setDate(expiration.getDate()+10);
+  console.log(expiration);
+
+  // 날짜를 쿠키로 저장하기 위해서 -> UTC 방식으로 표기 -> toUTCString() 메서드 사용.
+  console.log(expiration.toUTCString());
+
+  // 쿠키 생성하기
+  let cookies = '';
+  cookies = `userid=helloworld; expires=${expiration.toUTCString()};`;
+  console.log(cookies);
+
+  // 쿠키 저장하기
+  document.cookie = cookies;
+  alert('쿠키를 생성하였습니다.');
 }
